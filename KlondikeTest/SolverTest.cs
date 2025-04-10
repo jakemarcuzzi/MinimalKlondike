@@ -154,5 +154,10 @@ namespace KlondikeTest
             SolveResult result = SolveGame(0, 17, false, "041023134124133071102114063072031033121092131043082044122083084064061051093094054073042013091104032101113062022103052034021132012074112111123011053024081014", 1, 10, 250, 600000);
             Assert.Equal(SolveResult.Impossible, result);
         }
+         private SolveResult SolveGame(int expectedMoves, int expectedFoundation, bool includeFoundation, string deal, int drawCount = 1, int maxRounds = 10, int maxMoves = 250, int maxNodes = 50000000)
+        {
+          SolveResult result = SolveGame(150, 52, false, "071122064014061042022073072063053051031054044034024013094043023104033084062124012011082032041112111083091093052101092133103081114131123134121103021132074102", 1, 10, 250, 600000);
+            Assert.Equal(SolveResult.Impossible, result);
+        
     }
 }
